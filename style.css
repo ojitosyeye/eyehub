@@ -1,50 +1,42 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Fondo animado */
 body {
-  height: 100vh;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("https://wallpaperaccess.com/full/2825704.gif") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* Fondo de partículas */
-#particles {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+/* Caja centrada con efecto glass */
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
 }
 
-/* Contenido centrado */
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 10; /* <-- Esto hace que el texto se vea */
+/* Logo con glow rojo */
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px red) drop-shadow(0 0 30px red);
 }
 
-/* Título con glow */
+/* Título con glow azul */
 h1 {
-  font-size: 60px;
-  letter-spacing: 3px;
-  text-shadow: 0 0 20px red, 0 0 40px red;
-  animation: glow 2s infinite alternate ease-in-out;
+    font-size: 55px;
+    margin: 0;
+    text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff;
 }
 
-@keyframes glow {
-  0% { text-shadow: 0 0 10px red, 0 0 20px red; }
-  100% { text-shadow: 0 0 25px red, 0 0 60px red; }
-}
-
+/* Texto */
 p {
-  margin-top: 15px;
-  font-size: 20px;
-  opacity: 0.8;
+    font-size: 22px;
+    opacity: 0.9;
 }
