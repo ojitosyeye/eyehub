@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>iHub</title>
-  <link rel="stylesheet" href="style.css">
+  <title>EyeHub Launcher</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("https://wallpaperaccess.com/full/2825704.gif") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 15px red) drop-shadow(0 0 30px red);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 42px;
+      text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff;
+    }
+
+    p {
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: #ff0000cc;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 0 15px red, 0 0 30px red;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #ff3333;
+      box-shadow: 0 0 25px red, 0 0 50px red;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/32/32439.png" alt="EyeHub">
+    <h1>EyeHub</h1>
+    <p>Launcher de servicios externos</p>
 
-  <canvas id="particles"></canvas>
-
-  <div class="center">
-    <h1>TUffest Unblocked Website</h1>
-    <p>Welcome to iHub — the cleanest and toughest hub.</p>
+    <!-- Tus proxys externos (se abren en otra pestaña) -->
+    <a class="btn" href="https://browser.rammerhead.org" target="_blank">Rammerhead</a>
+    <a class="btn" href="https://uc.robby.blue/ultraviolet" target="_blank">Ultraviolet</a>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
